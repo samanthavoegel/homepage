@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="js/jquery-1.7.js"></script>
+<script type="text/javascript" src="js/my_jquery.js"></script>
+
+
+<meta name="keywords" content="Mediengestalterin, München, Portfolio">
+<meta name="description" content="eine Webseite ueber meine Arbeiten und mich">
+<!-- normale Auflösung für Desktop -->
+<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+<!-- für mobile Browser - Android -->
+<link rel="icon" type="image/png" href="images/favicon-96x96.png">
+<!-- für mobile Browser auf iOS Safari, aber auch Android Chrome -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+
+<title>Portfoliobeispiele</title>
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<link href="css/lightbox.css" rel="stylesheet" type="text/css">  <!-- in default abspeichern? -->
+<link href="css/slippry.css" rel="stylesheet" type="text/css">   <!-- in default abspeichern? -->
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> FÜR WAS IST DAS? LÖSCHEN?-->
+<script src="js/lightbox.js"></script> 
+<script src="js/slippry.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        /* ein-/ausblenden des Back-Top-Buttons*/
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 200){ /* Pixelangabe, wann der Pfeil erscheinen soll*/
+                $('#back-top').fadeIn(1000); /* immer in Millisekunden angeben, sprich 1 sec*/
+            }
+        else {
+            $('#back-top').fadeOut(1000);  
+        }
+        });
+        
+        /* langsam nach oben scrollen */
+        $('#back-top a').click(function(){
+            $('html,body').animate({scrollTop:0},500);
+            return false; /* hier soll nichts mehr zurückgegeben werden, darum unterbinden wir es komplett mit false*/
+        });
+    });
+</script>
+</head>
+
+<body>
+<!-- Samanthas Logo  ---------------------------------------------------------------------------------------------------------------------->
+<div class="clearfix">
+    <div class="wrapper"> <a href="index.php">
+        <svg id="logo" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 192.59 41.05" style="enable-background:new 0 0 192.59 41.05;" xml:space="preserve">
+        <g>
+            <path d="M2.38,38.84C0.99,37.37,0.2,35.37,0,32.83l3.06-0.95c0.2,2.21,0.72,3.83,1.55,4.86c0.83,1.04,2,1.55,3.51,1.55
+                c1.27,0,2.25-0.36,2.93-1.08c0.68-0.72,1.03-1.73,1.03-3.03c0-1.9-1.17-3.84-3.51-5.81l-3.96-3.41C3.24,23.82,2.24,22.7,1.6,21.6
+                c-0.64-1.1-0.95-2.41-0.95-3.91c0-2.04,0.63-3.63,1.88-4.79c1.25-1.15,2.93-1.73,5.04-1.73c2.14,0,3.78,0.69,4.94,2.05
+                c1.15,1.37,1.8,3.23,1.93,5.56l-2.61,0.85c-0.2-3.81-1.57-5.71-4.11-5.71c-1.14,0-2.04,0.31-2.71,0.93c-0.67,0.62-1,1.48-1,2.58
+                c0,0.9,0.17,1.69,0.5,2.35c0.33,0.67,0.95,1.4,1.85,2.21l4.11,3.66c1.57,1.4,2.76,2.71,3.58,3.93c0.82,1.22,1.23,2.71,1.23,4.49
+                c0,2.2-0.67,3.92-2,5.14c-1.34,1.22-3.14,1.83-5.41,1.83C5.6,41.05,3.77,40.31,2.38,38.84z"/>
+            <path d="M42.35,11.63h3.41v2.96c0.93-1.14,1.99-2,3.16-2.58c1.17-0.58,2.39-0.88,3.66-0.88c2.41,0,3.94,1.25,4.61,3.76
+                c0.97-1.24,2.06-2.17,3.28-2.81c1.22-0.63,2.5-0.95,3.83-0.95c1.44,0,2.61,0.52,3.53,1.55c0.92,1.04,1.38,2.72,1.38,5.06v22.85
+                H65.8V17.84c0-1.57-0.25-2.66-0.75-3.28c-0.5-0.62-1.22-0.93-2.16-0.93c-0.87,0-1.79,0.27-2.76,0.8c-0.97,0.53-1.87,1.27-2.71,2.2
+                c0.07,0.47,0.1,0.84,0.1,1.1v22.85h-3.46V17.84c0-1.6-0.25-2.71-0.75-3.31c-0.5-0.6-1.22-0.9-2.16-0.9c-0.87,0-1.77,0.27-2.71,0.8
+                c-0.94,0.53-1.84,1.25-2.71,2.15v24.01h-3.41V11.63z"/>
+            <path d="M81.74,11.61h4.01l8.62,28.98h-3.76l-6.97-24.66h-0.01l-6.76,24.66h-3.71L81.74,11.61z"/>
+            <path d="M159.92,11.61h4.01l8.62,28.98h-3.76l-6.96-24.66h-0.01l-6.76,24.66h-3.71L159.92,11.61z"/>
+            <!--         A -->
+            <path id="zweitesA" d="M159.92,11.61h4.01l8.62,28.98h-3.76l-6.96-24.66h-0.01l-6.76,24.66h-3.71L159.92,11.61z"/>
+            <!-- zweites A --> 
+            <!--<path id="v" d="M184.02,40.59h-4.01l-8.62-28.98h3.76l6.96,24.65h0.01l6.76-24.65h3.71L184.02,40.59z"/> --> <!--  V -->
+            <path d="M98.52,11.63h3.66v3.01c0.97-1.07,2.05-1.91,3.23-2.53c1.19-0.62,2.43-0.93,3.73-0.93c1.44,0,2.54,0.54,3.31,1.6
+                c0.77,1.07,1.15,2.59,1.15,4.56v23.25h-3.66V18.14c0-1.47-0.23-2.52-0.68-3.16c-0.45-0.63-1.14-0.95-2.08-0.95
+                c-0.8,0-1.64,0.24-2.51,0.73c-0.87,0.49-1.7,1.15-2.51,1.98v23.86h-3.66V11.63z"/>
+            <path d="M121.8,39.32c-0.75-1.08-1.13-2.66-1.13-4.74V14.03h-3.56v-2.41h3.56V2.66h3.66v8.97h4.81v2.41h-4.81v20.2
+                c0,1.47,0.17,2.48,0.5,3.03c0.33,0.55,1.02,0.83,2.05,0.83c0.63,0,1.34-0.08,2.1-0.25v2.81c-1.04,0.2-2.07,0.3-3.11,0.3
+                C123.92,40.94,122.56,40.4,121.8,39.32z"/>
+            <path d="M133.1,0h3.66v14.68c2.17-2.34,4.53-3.51,7.07-3.51c1.44,0,2.54,0.54,3.31,1.6c0.77,1.07,1.15,2.59,1.15,4.56v23.25h-3.71
+                V18.14c0-1.47-0.23-2.52-0.68-3.16c-0.45-0.63-1.14-0.95-2.08-0.95c-0.8,0-1.64,0.25-2.53,0.75c-0.88,0.5-1.73,1.17-2.53,2v23.81
+                h-3.66V0z"/>
+        </g>
+        <path d="M26.61,11.61h4.01l8.62,28.98h-3.76l-6.97-24.66h-0.01l-6.76,24.66h-3.71L26.61,11.61z"/>
+        </svg>
+        </a> </div>
+    <!-- Samantas Logo  ---------------------------------------------------------------------------------------------------------------------->
+    
+    <input type="checkbox" id="navchecker">
+    <nav id="topnav" class="wrapper">
+        <p class="nodesk">
+            <label for="navchecker">+</label>
+        </p>
+        <ul class="clearfix">
+            <li><a href="index.php">Servus</a></li>
+            <li><a href="Portfolio.html" class="akt">Portfolio</a></li>    
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</div>
+<header>
+    <article id="eins">
+        <header>
+            <h1 class="wrapper">Arbeitsbeispiele</h1>
+        </header>
+        <div class="wrapper">
+            <h3>Aufbau von Flugblättern & Zeitungen</h3>
+            <p class="zweispalter">Meine Hauptaufgabe bei der Firma Kolb war die Projektleitung des BayWa Bau- und Gartenmarktes in Lauterach (Österreich). 
+                Dies beinhaltete die vollzeitige Kundenbetreuung sowie die Bearbeitung von Flugblättern und Zeitungen mit monatlichen Erscheinungsterminen. 
+                In der ersten Phase habe ich mich um den kompletten Layout-Aufbau gekümmert. Nachdem der Grundstein gesetzt wurde, erfolgten die Retuschen 
+                und Korrekturen, die vom Kunden erwünscht waren. Als die Seiten freigeben wurden, habe ich Proofs erzeugt und mich um die Qualitätssicherung gekümmert. In der Endphase des Projektes war ich mit organisatorischen Arbeiten beschäftigt, dazu gehörten Absprachen mit den zuständigen Druckereien, 
+                termingerechte Versendungen von Druckdaten und Erstellungen von Rechnungen. Anbei ein Flugblatt und eine Zeitung zum Durchblättern. <b>Klicke auf die obere oder untere Ecke um vor- oder zurück zu blättern.</b>  </p>
+        </div>
+        
+       <div id="flugblatt">
+            <div style="background-image: url(images/FB/BWL_FB06_19-001.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-002.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-003.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-004.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-005.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-006.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-007.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-008.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-009.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-010.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-011.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-012.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-013.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-014.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-015.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-016.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-017.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-018.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-019.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-020.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-021.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-022.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-023.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-024.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-025.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-026.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-027.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-028.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-029.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-030.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-031.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-032.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-033.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-034.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-035.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-036.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-037.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-038.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-039.jpg);"></div>
+            <div style="background-image: url(images/FB/BWL_FB06_19-040.jpg);"></div>
+        </div>
+        
+
+        <div id="zeitung">
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-001.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-002.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-003.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-004.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-005.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-006.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-007.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-008.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-009.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-010.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-011.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-012.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-013.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-014.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-015.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-016.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-017.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-018.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-019.jpg);"></div>
+            <div style="background-image: url(images/ZG/BWL_ZG06_19-020.jpg);"></div>
+        </div>
+
+            <div class="wrapper">
+                <h3>Aufbereitung von  Out of Home Medien</h3>
+                <p class="zweispalter">Bei der Firma R12 in Wien war ich unter anderem für den speziellen         Layoutaufbau für Außenwerbungen verantwortlich. 
+                    Dazu gehörte die Durchführung von Farbanpassungen und Erstellung von Druckdaten. Hier ein Beispiel von einem Citylight-Poster von Mastercard und einer Austrian Airlines Beklebung für Busse und Straßenbahnen in Mailand. </p>
+            
+
+            <div class="rahmen">
+            <!-- Slippry ///////////////////////////// -->
+         
+            <ul id="thumbnails">
+                <li>
+                   <a href="#slide1">
+                     <img src="images/slippry/Citylight_2000x1150px.jpg">
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#slide2">
+                     <img src="images/slippry/Busbeklebung_2000x1150px.jpg">
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#slide3">
+                     <img src="images/slippry/tramanfang_2000x1150.jpg">
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#slide4">
+                     <img src="images/slippry/tramende_2000x1150.jpg">
+                   </a>
+                 </li>
+               </ul>
+    
+            <!-- Slippry  Ende ////////////////////////////////////////////// -->
+        </div>
+                </div>
+
+    </article>
+    <article id="zwei">
+        <header>
+            <h1 class="wrapper">Freelance Projekte</h1>
+        </header>
+        <div class="wrapper">
+            <h3>Erstellung von Logos und Druckprodukten
+            </h3>
+            <p class="zweispalter">In einigen freelance Projekten habe ich diverse Druckprodukte erstellt. Für den Malerbetrieb „Thaler“ in Dornbirn/Österreich habe ich ein neues Logo inklusive Visitenkarten entworfen, für die Firma „zum.PUR“ das Logo sowie die komplette Geschäftsausstattug. Für die Schauspielerin Angelina Berger habe ich Bewerbungsunterlagen in Form eines Handzettels gefertigt, welcher per Post versendet wurde. Zum Schluss ein Foto von unserer Diplom-Abschlussarbeit, bei welcher ich für die Gestaltung des Spielbrettes und den dazugehörigen Spielutensilien verantwortlich war. </p>
+        
+        
+        <!-- Slippry ///////////////////////////// -->
+        <div class="rahmen">
+        <ul id="slippry">
+            <li>
+               <a href="#slide1">
+                 <img src="images/slippry/Visitenkarten_Thaler_2000x1150px.jpg">
+               </a>
+             </li>
+             <li>
+               <a href="#slide2">
+                 <img src="images/slippry/zum.Pur.jpg">
+               </a>
+             </li>
+             <li>
+               <a href="#slide3">
+                 <img src="images/slippry/Angi_Flyer_2000x1150px.jpg">
+               </a>
+             </li>
+             <li>
+               <a href="#slide4">
+                 <img src="images/slippry/Planspiel.jpg">
+               </a>
+             </li>
+           </ul>
+        </div>
+        
+        </div>
+		<!-- Slippry  Ende ////////////////////////////////////////////// -->
+        
+        <div class="wrapper">
+            <h3>Illustration 
+            </h3>
+            <p class="zweispalter">Santé femme ist ein Institut für Frauengesundheit mit Sitz in Wien. Es ist auf einer Reihe von Social Media Plattformen vertreten, bei denen sich Patienten unter anderem über Frauenheilkunde, Terminvereinbarungen und das Ärzteteam informieren können. Für den Instagram-Account "sante.femme" habe ich eine animierte Illustration mit den firmeneigenen CI-Vorgaben und dem Slogan "I am a Woman, what's your superpower?" entworfen. Dafür habe ich die Programme Illustrator und Photoshop verwendet. </p>
+            
+            <figure class="galerie2">
+            
+            <a href="images/big/santef_iphone_1680x1980px.jpg" 
+            data-lightbox="set2" 
+            data-title="Handyansicht Instagram">
+            <img src="images/small/santef_iphone_900x600px_th.jpg" alt="Santé Femme Handyansicht"></a>
+                
+            <a href="images/big/sante_femme_superpower.gif" 
+            data-lightbox="set2" 
+            data-title="Sante femmé animierte Illustration">
+            <img src="images/small/sante_femme_900x600px_th.jpg" alt="Santé femme gif"></a>
+                
+            </figure>
+      
+        
+<!--        <div class="rahmen"><img src="images/sante_femme_superpower.gif" class="gif" alt="santefemme"></div>-->
+        
+        </div>
+        
+    </article>
+    <article id="drei">
+        <header>
+            <h1 class="wrapper">Momentaufnahmen</h1>
+        </header>
+        <div class="wrapper">
+            <h3>Fotografie und Bildbearbeitung</h3>
+            <p class="zweispalter">In meiner Freizeit und auf Reisen bin ich gerne mit meiner Kamera unterwegs. Für den Feinschliff bearbeite ich die Fotos anschließend in Photoshop oder in Lightroom. Hier ein paar Eindrücke von meinem halbjährigen Auslandsaufenthalt 2019/2020 in Kanada, bei dem ich auch einen kurzen Abstecher in die USA gemacht habe. Die erste Spalte zeigt Fotos aus Vancouver Island, die Mittlere aus den Bergen Albertas/British Columbia (Westkanada) und Letztere aus Kalifornien. </p>
+            
+            <figure class="galerie">
+            
+            <a href="images/big/Victoria.jpg" 
+            data-lightbox="set1" 
+            data-title="Victoria Sonnenuntergang (Kanada)">
+            <img src="images/small/Victoria_th.jpg" alt="Victoria"></a>
+                
+            <a href="images/big/VictoriaIsland.jpg" 
+            data-lightbox="set1" 
+            data-title="Victoria Island Klippen (Kanada)">
+            <img src="images/small/VictoriaIsland_th.jpg" alt="Klippen"></a>
+                
+            <a href="images/big/Muscheln.jpg" 
+            data-lightbox="set1"
+            data-title="Muscheln">
+            <img src="images/small/Muscheln_th.jpg" alt="Muscheln"></a>
+                
+            <a href="images/big/DSC07762_Berge.jpg" 
+            data-lightbox="set1" 
+            data-title="Skitour Rogers Pass (Kanada)">
+            <img src="images/small/DSC07762_berge_th.jpg" alt="Skitour"></a>
+
+            <a href="images/big/DSC07545_rogerspass.jpg" 
+            data-lightbox="set1"
+            data-title="On the road in Alberta (Kanada)">
+            <img src="images/small/DSC07545_rogerspass_th.jpg" alt="Kanada"></a>
+
+            <a href="images/big/DSC07485_skitour.jpg" 
+            data-lightbox="set1" 
+            data-title="Tiefschnee-Hang beim Skitouren (Kanada)">
+            <img src="images/small/DSC07485_skitouren_th.jpg" alt="Tiefschnee"></a>
+            
+            <a href="images/big/DSC_0658_vogel.jpg" 
+            data-lightbox="set1" 
+            data-title="Vogel Nahaufnahme (Kalifornien)">
+            <img src="images/small/DSC_0658_vogel_th.jpg" alt="Vogel"></a>
+
+            <a href="images/big/DSC06155_cali.jpg" 
+            data-lightbox="set1" 
+            data-title="See-Elefanten an der Küste Kaliforniens">
+            <img src="images/small/DSC06155_cali_th.jpg" alt="Vogel"></a>
+                
+            <a href="images/big/DSC06516_ichcali.jpg" 
+            data-lightbox="set1" 
+            data-title="Golden Gate Bridge">
+            <img src="images/small/DSC06516_ichcali_th.jpg" alt="Vogel"></a>
+                
+            </figure>
+        </div>
+    </article>
+    
+    <footer>
+        <section class="wrapper">
+        <a href="Datenschutz.html">Datenschutz</a>
+        <a href="Impressum.html">Impressum</a>
+        </section>
+    </footer>
+</header>
+    
+<div id="back-top">
+    <a href="#">&uarr;</a>
+</div>
+
+
+<!-- Turn Page Flugblatt und Zeitung /////////////////////////////////// -->
+<script type="text/javascript" src="js/turnjs4/lib/turn.min.js"></script>
+<script>$('#flugblatt').turn({gradients: true, acceleration: true});</script>
+<script>$('#zeitung').turn({gradients: true, acceleration: true});</script>
+<script>$('#zeitung2').turn({gradients: true, acceleration: true});</script>
+ <!-- <script>document.getElementById("flugblatt").style.boxShadow = "10px 20px 30px blue"; </script> -->
+
+
+<!-- Slippry Thumbnails ///////////////////////////////// -->
+ <script> 
+    var thumbs = jQuery('#thumbnails').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="slippry_box thumbnails" />',
+  // options
+  transition: 'horizontal',
+  pager: false,
+  auto: false,
+  onSlideBefore: function (el, index_old, index_new) {
+    jQuery('.thumbs a img').removeClass('active');
+    jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+  }
+});
+
+jQuery('.thumbs a').click(function () {
+  thumbs.goToSlide($(this).data('slide'));
+  return false;
+});
+ </script>
+    
+    
+ <script> 
+    var thumbs = jQuery('#slippry').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="slippry_box thumbnails" />',
+  // options
+  transition: 'horizontal',
+  pager: false,
+  auto: false,
+  onSlideBefore: function (el, index_old, index_new) {
+    jQuery('.thumbs a img').removeClass('active');
+    jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+  }
+});
+
+jQuery('.thumbs a').click(function () {
+  thumbs.goToSlide($(this).data('slide'));
+  return false;
+});
+ </script>
+    
+    
+<!-- Slippry Thumbnails Ende ///////////////////////////////// -->
+
+    
+<!-- Cookie /////////////////////////////////////// -->
+    <div id="cookiedingsbums"><div class="wrapper">
+    <div> <span>Ja, auch diese Webseite verwendet Cookies. </span> <a href="https://www.cookiebot.com/de/dsgvo-cookies/">Hier erfahrt ihr alles zum Datenschutz</a></div>
+    <span id="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">&#10006;</span></div>
+</div>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+     if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
+     jQuery('#cookiedingsbums').hide();
+     }
+     else{
+     jQuery('#cookiedingsbums').prependTo('body');
+     jQuery('#cookiedingsbumsCloser').show();
+     }
+    </script>
+    
+<!-- Cookie-Ende /////////////////////////////////////// -->
+  
+</body>
+</html>
